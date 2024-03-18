@@ -1,0 +1,30 @@
+.Block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin: 50px 0 0 50px;
+}
+.Block img{
+    display: block;
+    transition: filter 0.3s ease;
+}
+.Block span {
+    position: absolute;
+    bottom: 30px;
+    padding: 0;
+    font-size: 20px;
+    text-decoration: none;
+}
+.Block:hover img{
+    filter: blur(5px);
+}
+.Block a {
+    text-decoration: none;
+    color: snow;
+}
+.Block a:hover {
+    transition: color 0.3s ease;
+    color: red;
+}

@@ -1,0 +1,13 @@
+.panel1 img{
+    position: fixed;
+    margin-top: 100px;
+}
+.Container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.panel2 div {
+    margin-top: 100px;
+    padding-left: 30px;
+}
