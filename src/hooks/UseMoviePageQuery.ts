@@ -1,4 +1,5 @@
 import {useSearchParams} from "react-router-dom";
+import {isDisabled} from "@testing-library/user-event/dist/utils";
 
 const UseMoviePageQuery = () => {
     const [query, setQuery] = useSearchParams({page: "1"});

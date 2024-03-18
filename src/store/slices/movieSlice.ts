@@ -4,14 +4,10 @@ import {movieService} from "../../services/movieService";
 
 interface IState {
     movies: IMovie[];
-    prevPage: number;
-    nextPage: number;
     page: number;
 }
 const initialState: IState = {
     movies: [],
-    prevPage: null,
-    nextPage: null,
     page: null,
 }
 const getAll = createAsyncThunk<any, any>(
