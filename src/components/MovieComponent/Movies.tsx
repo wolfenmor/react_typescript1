@@ -9,14 +9,14 @@ import {Movie} from "./Movie";
 const Movies = () => {
     const {movies} = useAppSelector(state => state.movies)
     const dispatch = useAppDispatch()
-    const [query, ] = useSearchParams({page: "1"})
+    const [query,] = useSearchParams({page: "1"})
     const page = query.get("page")
     useEffect(() => {
         dispatch(movieActions.getAll({page}))
     }, [page])
     return (
         <div className={css.Container}>
-            {movies.map(movie => <Movie key={movie.id} movie={movie} />)}
+            {movies.map(movie => <Movie key={movie.id} movie={movie}/>)}
         </div>
     );
 };

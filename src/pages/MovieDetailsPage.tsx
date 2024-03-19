@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {MovieDetails} from "../components/MovieComponent/MovieDetails/MovieDetails";
+import {MovieDetails} from "../components/MovieDetails/MovieDetails";
 import {useParams} from "react-router-dom";
 import {useAppSelector} from "../hooks/UseAppSelector";
 import {useAppDispatch} from "../hooks/UseAppDispatch";

@@ -8,11 +8,13 @@ interface IState {
     movies: IMovie[];
     page: number;
     movieById: IMovie;
+    movieByGenreId: IMovie;
 }
 const initialState: IState = {
     movies: [],
     page: null,
-    movieById: null
+    movieById: null,
+    movieByGenreId: null
 }
 const getAll = createAsyncThunk<IPagination<IMovie>, any>(
     "movieSlice/getAll",
@@ -38,6 +40,18 @@ const getAllById = createAsyncThunk<any, any>(
         }
     }
 )
+const getByGenreId = createAsyncThunk<any, any>(
+    "movieSlice/getByGenreId",
+    async ({id}, {rejectWithValue}) => {
+        try {
+            const {data} = await movieService.getByGenreId(id)
+            return data
+        }catch (e) {
+            const err = e as AxiosError
+            return rejectWithValue(err.response.data)
+        }
+    }
+)
 const movieSlice = createSlice({
     name: "movieSlice",
     initialState,
@@ -52,13 +66,17 @@ const movieSlice = createSlice({
             .addCase(getAllById.fulfilled, (state, action) => {
                 state.movieById = action.payload
             })
+            .addCase(getByGenreId.fulfilled, (state, action) => {
+                state.movieByGenreId = action.payload
+            })
 })
 const {reducer: movieReducer, actions} = movieSlice;
 
 const movieActions = {
     ...actions,
     getAll,
-    getAllById
+    getAllById,
+    getByGenreId
 }
 
 export {
