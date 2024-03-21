@@ -3,3 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+.GenreBox img {
+    width: 100%;
+    height: 30em;
+}

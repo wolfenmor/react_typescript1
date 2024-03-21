@@ -5,24 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="198b9c5c-a3cf-4171-841d-79fc2b8d5c1e" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/components/GenresComponent/Genre.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GenresComponent/Genre.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GenresComponent/Genres.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GenresComponent/Genres.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MoviesOfTheGenre/MoviesOfTheGenre.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/GenresPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/MoviesOfTheGenrePage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/genreService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/slices/genreSlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Search/Search.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/searchInterface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/SearchPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MovieComponent/MovieDetails/MovieDetails.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MovieDetails/MovieDetails.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MovieComponent/MovieDetails/MovieDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MovieDetails/MovieDetails.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MovieComponent/Movies.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MovieComponent/Movies.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MovieComponent/Movies.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MovieComponent/Movies.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MoviesOfTheGenre/MoviesOfTheGenre.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesOfTheGenre/MoviesOfTheGenre.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/UseMoviePageQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/UseMoviePageQuery.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/MainLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MainLayout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/MovieDetailsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MovieDetailsPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MoviesOfTheGenrePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MoviesOfTheGenrePage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/movieService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/movieService.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/slices/movieSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/slices/movieSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="CSS File" />
+        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
       </list>
     </option>
@@ -91,7 +86,8 @@
       <workItem from="1710765350742" duration="3653000" />
       <workItem from="1710780469605" duration="6410000" />
       <workItem from="1710864477848" duration="640000" />
-      <workItem from="1710866997023" duration="4583000" />
+      <workItem from="1710866997023" duration="5412000" />
+      <workItem from="1710963870548" duration="14023000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1710684624186</created>
@@ -135,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710786908849</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="init">
+      <created>1710871854400</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1710871854400</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
