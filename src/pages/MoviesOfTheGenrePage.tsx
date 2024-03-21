@@ -5,7 +5,7 @@ import {useAppSelector} from "../hooks/UseAppSelector";
 import {movieActions} from "../store/slices/movieSlice";
 import {MoviesOfTheGenre} from "../components/MoviesOfTheGenre/MoviesOfTheGenre";
 import css from "../components/MovieComponent/Movies.module.css"
-import MoviePagination from "../components/MovieComponent/MoviePagination";
+import MoviePagination from "../components/Pagination/MoviePagination";
 
 const MoviesOfTheGenrePage = () => {
     const {name, id} = useParams()

@@ -3,7 +3,7 @@ import {useParams, useSearchParams} from "react-router-dom";
 import {useAppDispatch} from "../hooks/UseAppDispatch";
 import {useAppSelector} from "../hooks/UseAppSelector";
 import {movieActions} from "../store/slices/movieSlice";
-import MoviePagination from "../components/MovieComponent/MoviePagination";
+import MoviePagination from "../components/Pagination/MoviePagination";
 import {Search} from "../components/Search/Search";
 import css from "../components/MovieComponent/Movies.module.css";
 import {Movie} from "../components/MovieComponent/Movie";

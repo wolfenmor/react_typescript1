@@ -2,12 +2,12 @@ import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 import {IMovie} from "../../interfaces/movieInterfaces/movieInterface";
 import {movieService} from "../../services/movieService";
 import {AxiosError} from "axios";
-import {IPagination} from "../../interfaces/paginationInterface";
 
 interface IState {
     movies: IMovie[];
     page: number;
-    total_page: IMovie
+    total_page: IMovie;
+    currentPage: number;
     movieById: IMovie;
     movieByGenreId: IMovie[];
     movieBySearch: IMovie[]
@@ -16,11 +16,12 @@ const initialState: IState = {
     movies: [],
     page: null,
     total_page: null,
+    currentPage: 1,
     movieById: null,
     movieByGenreId: [],
     movieBySearch: []
 }
-const getAll = createAsyncThunk<IPagination<IMovie>, any>(
+const getAll = createAsyncThunk<any, any>(
     "movieSlice/getAll",
     async ({page}, {rejectWithValue}) => {
         try {
@@ -75,9 +76,11 @@ const movieSlice = createSlice({
     extraReducers: builder =>
         builder
             .addCase(getAll.fulfilled, (state, action) => {
-                const {results, page} = action.payload
+                const {results, page, total_pages} = action.payload
                 state.movies = results
                 state.page = page
+                state.total_page = total_pages
+
             })
             .addCase(getAllById.fulfilled, (state, action) => {
                 state.movieById = action.payload
@@ -88,9 +91,10 @@ const movieSlice = createSlice({
                 state.page = page
             })
             .addCase(getBySearch.fulfilled, (state, action) => {
-                const {results, page} = action.payload
+                const {results, page, total_page} = action.payload
                 state.movieBySearch = results
                 state.page = page
+                state.total_page = total_page
             })
 })
 const {reducer: movieReducer, actions} = movieSlice;

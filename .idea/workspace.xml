@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="198b9c5c-a3cf-4171-841d-79fc2b8d5c1e" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/components/Search/Search.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/searchInterface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/SearchPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MovieComponent/Movies.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MovieComponent/Movies.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MoviesOfTheGenre/MoviesOfTheGenre.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesOfTheGenre/MoviesOfTheGenre.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/UseMoviePageQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/UseMoviePageQuery.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/MainLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MainLayout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MovieComponent/MoviePagination.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pagination/MoviePagination.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/MoviesOfTheGenrePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MoviesOfTheGenrePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/movieService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/movieService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MoviesPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MoviesPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SearchPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SearchPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/slices/movieSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/slices/movieSlice.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +33,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2donQLzGBHa12l22GYhcNoqmTs3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -67,6 +60,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Maksim K\IdeaProjects\react_typescript1\src\components\Pagination" />
       <recent name="C:\Users\Maksim K\IdeaProjects\react_typescript1\src\components" />
       <recent name="C:\Users\Maksim K\IdeaProjects\react_typescript1\src\components\MovieComponent\MovieDetails" />
       <recent name="C:\Users\Maksim K\IdeaProjects\react_typescript1\src\pages" />
@@ -87,7 +81,8 @@
       <workItem from="1710780469605" duration="6410000" />
       <workItem from="1710864477848" duration="640000" />
       <workItem from="1710866997023" duration="5412000" />
-      <workItem from="1710963870548" duration="14023000" />
+      <workItem from="1710963870548" duration="14340000" />
+      <workItem from="1711021265090" duration="1727000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1710684624186</created>
@@ -138,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710871854400</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="init">
+      <created>1711021096390</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711021096390</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
