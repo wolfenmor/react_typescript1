@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="198b9c5c-a3cf-4171-841d-79fc2b8d5c1e" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/src/components/MovieDetails/MoviesDetails.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MovieDetails/MoviesDetails.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MoviesOfTheGenre/MovieOfTheGenre.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Search/Searches.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/SearchService.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MovieComponent/MoviePagination.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pagination/MoviePagination.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MoviesOfTheGenre/MoviesOfTheGenre.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesOfTheGenre/MoviesOfTheGenre.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Search/Search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/Search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MovieDetailsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MovieDetailsPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/MoviesOfTheGenrePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MoviesOfTheGenrePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/MoviesPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MoviesPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/SearchPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SearchPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/movieService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/movieService.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/slices/movieSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/slices/movieSlice.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,9 +28,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript JSX File" />
         <option value="CSS File" />
         <option value="TypeScript File" />
-        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -82,7 +90,7 @@
       <workItem from="1710864477848" duration="640000" />
       <workItem from="1710866997023" duration="5412000" />
       <workItem from="1710963870548" duration="14340000" />
-      <workItem from="1711021265090" duration="1727000" />
+      <workItem from="1711021265090" duration="8039000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1710684624186</created>
@@ -140,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711021096390</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="init">
+      <created>1711027232637</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1711027232637</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

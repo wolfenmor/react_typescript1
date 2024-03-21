@@ -6,7 +6,6 @@ import MovieDetailsPage from "./pages/MovieDetailsPage";
 import GenresPage from "./pages/GenresPage";
 import MoviesOfTheGenrePage from "./pages/MoviesOfTheGenrePage";
 import SearchPage from "./pages/SearchPage";
-
 const router = createBrowserRouter([
     {
         path: "", element: <MainLayout/>, errorElement: <ErrorPage/>, children: [

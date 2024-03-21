@@ -10,8 +10,8 @@ interface IState {
     currentPage: number;
     movieById: IMovie;
     movieByGenreId: IMovie[];
-    movieBySearch: IMovie[]
 }
+
 const initialState: IState = {
     movies: [],
     page: null,
@@ -19,7 +19,6 @@ const initialState: IState = {
     currentPage: 1,
     movieById: null,
     movieByGenreId: [],
-    movieBySearch: []
 }
 const getAll = createAsyncThunk<any, any>(
     "movieSlice/getAll",
@@ -51,19 +50,7 @@ const getByGenreId = createAsyncThunk<any, any>(
         try {
             const {data} = await movieService.getByGenreId(id, page)
             return data
-        }catch (e) {
-            const err = e as AxiosError
-            return rejectWithValue(err.response.data)
-        }
-    }
-)
-const getBySearch = createAsyncThunk<any, any>(
-    "movieSlice/getBySearch",
-    async ({page, search}, {rejectWithValue}) => {
-        try {
-            const {data} = await movieService.getBySearch(page, search)
-            return data
-        }catch (e) {
+        } catch (e) {
             const err = e as AxiosError
             return rejectWithValue(err.response.data)
         }
@@ -72,7 +59,7 @@ const getBySearch = createAsyncThunk<any, any>(
 const movieSlice = createSlice({
     name: "movieSlice",
     initialState,
-    reducers:{},
+    reducers: {},
     extraReducers: builder =>
         builder
             .addCase(getAll.fulfilled, (state, action) => {
@@ -90,12 +77,6 @@ const movieSlice = createSlice({
                 state.movieByGenreId = results
                 state.page = page
             })
-            .addCase(getBySearch.fulfilled, (state, action) => {
-                const {results, page, total_page} = action.payload
-                state.movieBySearch = results
-                state.page = page
-                state.total_page = total_page
-            })
 })
 const {reducer: movieReducer, actions} = movieSlice;
 
@@ -103,8 +84,7 @@ const movieActions = {
     ...actions,
     getAll,
     getAllById,
-    getByGenreId,
-    getBySearch
+    getByGenreId
 }
 
 export {
