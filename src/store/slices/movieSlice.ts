@@ -2,25 +2,25 @@ import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 import {IMovie} from "../../interfaces/movieInterfaces/movieInterface";
 import {movieService} from "../../services/movieService";
 import {AxiosError} from "axios";
+import {IPagination} from "../../interfaces/paginationInterface";
 
 interface IState {
     movies: IMovie[];
-    page: number;
-    total_page: IMovie;
-    currentPage: number;
     movieById: IMovie;
     movieByGenreId: IMovie[];
+    total_pages: number;
+    page: number;
 }
 
 const initialState: IState = {
     movies: [],
-    page: null,
-    total_page: null,
-    currentPage: 1,
     movieById: null,
     movieByGenreId: [],
+    total_pages: null,
+    page: 1
+
 }
-const getAll = createAsyncThunk<any, any>(
+const getAll = createAsyncThunk<IPagination<IMovie>, any>(
     "movieSlice/getAll",
     async ({page}, {rejectWithValue}) => {
         try {
@@ -32,9 +32,11 @@ const getAll = createAsyncThunk<any, any>(
         }
     }
 )
-const getAllById = createAsyncThunk<any, any>(
+const getAllById = createAsyncThunk<IMovie, {
+    id: string;
+}>(
     "movieSlice/getAllById",
-    async (id, {rejectWithValue}) => {
+    async ({id}, {rejectWithValue}) => {
         try {
             const {data} = await movieService.getById(id)
             return data
@@ -44,7 +46,10 @@ const getAllById = createAsyncThunk<any, any>(
         }
     }
 )
-const getByGenreId = createAsyncThunk<any, any>(
+const getByGenreId = createAsyncThunk<IMovie, {
+    id: string,
+    page: any
+}>(
     "movieSlice/getByGenreId",
     async ({id, page}, {rejectWithValue}) => {
         try {
@@ -66,16 +71,14 @@ const movieSlice = createSlice({
                 const {results, page, total_pages} = action.payload
                 state.movies = results
                 state.page = page
-                state.total_page = total_pages
-
+                state.total_pages = total_pages
             })
             .addCase(getAllById.fulfilled, (state, action) => {
                 state.movieById = action.payload
             })
             .addCase(getByGenreId.fulfilled, (state, action) => {
-                const {results, page} = action.payload
+                const {results} = action.payload
                 state.movieByGenreId = results
-                state.page = page
             })
 })
 const {reducer: movieReducer, actions} = movieSlice;

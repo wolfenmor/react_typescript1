@@ -23,6 +23,8 @@ const MoviesOfTheGenre: FC<IProps> = () => {
         dispatch(movieActions.getByGenreId({id, page}))
     }, [page])
     console.log(movieByGenreId)
+    const {total_pages} = useAppSelector(state => state.search)
+    console.log(total_pages)
     return (
         <div className={css.Block}>
             <div className={css.GenreBox}>

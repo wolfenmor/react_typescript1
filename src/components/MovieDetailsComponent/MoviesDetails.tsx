@@ -9,11 +9,9 @@ const MoviesDetails = () => {
     const {movieById} = useAppSelector(state => state.movies)
     const dispatch = useAppDispatch()
     const {id} = useParams()
-    console.log(id)
     useEffect(()=> {
-        dispatch(movieActions.getAllById(id))
+        dispatch(movieActions.getAllById({id}))
     }, [])
-    console.log(movieById)
     return (
         <div className={css.Container}>
             {movieById && <MovieDetails movieDetails={movieById}/>}
