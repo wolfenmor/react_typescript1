@@ -1,14 +1,22 @@
+.panel1 img{
+    width: 250px;
+    height: 150px;
+}
 .panel2 {
     margin-left: 20px;
 }
 .panel2 h1 {
     color: #fff;
+    font-size: 40px;
 }
 .Value {
     color: #828282;
 }
 .Key{
     color: #fff;
+}
+.Key, .Value {
+    font-size: 20px;
 }
 .panel2 a {
     color: #fff;

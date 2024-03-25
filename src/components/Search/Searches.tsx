@@ -17,7 +17,7 @@ const Searches = () => {
 
     useEffect(()=> {
     dispatch(searchActions.getBySearch({querySearch, page}))
-    }, [query, dispatch, page])
+    }, [querySearch, dispatch, page])
     return (
         <div className={css.Container}>
             {search.map(movie => <Search key={movie.id} movie={movie}/>)}
