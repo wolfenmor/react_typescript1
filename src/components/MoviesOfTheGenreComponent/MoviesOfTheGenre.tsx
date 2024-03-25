@@ -31,7 +31,7 @@ const MoviesOfTheGenre: FC<IProps> = () => {
                 {movieByGenreId && movieByGenreId.length > 0 && (
                     <img className={css.GenreImg} src={`https://image.tmdb.org/t/p/w200/${movieByGenreId[1].backdrop_path}`} alt={movieByGenreId[0].original_title} />
                 )}
-                Movies in the Genre: {name}
+                <span> Movies in the Genre:</span> <h3>{name}</h3>
             </div>
             <div className={css.Container}>
                 {movieByGenreId && movieByGenreId.map(movie => <MovieOfTheGenre key={movie.id} movie={movie}/>)}

@@ -1,3 +1,22 @@
-.Genre {
+.Genre a {
+    transition: 250ms;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid snow;
 
+}
+.Genre a:hover{
+    transition: color 250ms;
+    color: red;
+    text-decoration: none;
+    border-bottom: none;
+}
+.Genre {
+    background-color: black;
+    width: 200px;
+    height: 150px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

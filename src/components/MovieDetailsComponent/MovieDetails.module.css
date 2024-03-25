@@ -1,13 +1,49 @@
-.panel1 img{
-    position: fixed;
-    margin-top: 100px;
+.panel2 {
+    margin-left: 20px;
 }
-.Container{
+.panel2 h1 {
+    color: #fff;
+}
+.Value {
+    color: #828282;
+}
+.Key{
+    color: #fff;
+}
+.panel2 a {
+    color: #fff;
+    transition: 250ms;
+    border-bottom: 1px solid;
+    text-decoration: none;
+}
+.panel2 a:hover {
+    border-bottom: none;
+    transition: 250ms;
+    color: red;
+}
+.Container {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    margin-top: 20px;
 }
-.panel2 div {
-    margin-top: 100px;
-    padding-left: 30px;
+.Container h3 {
+    color: #fff;
+}
+.BreadCrumbs {
+    padding-top: 50px;
+    display: flex;
+}
+.BreadCrumbs a:hover {
+    border-bottom: none;
+    transition: 250ms;
+    color: red;
+}
+.BreadCrumbs a {
+    color: #fff;
+    transition: 250ms;
+    border-bottom: 1px solid;
+    text-decoration: none;
+    margin-right: 50px;
+}
+.BreadCrumbs li {
+    color: #fff;
 }

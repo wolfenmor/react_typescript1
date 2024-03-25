@@ -1,5 +1,5 @@
 .Header {
-    background-color: black;
+    background-color: #221f1f;
     height: 50px;
     display: flex;
     align-items: center;
@@ -10,13 +10,14 @@
     width: 100%;
     position: fixed;
     z-index: 1;
+    border-bottom: 1px solid rgba(255,255,255,.1);
 }
 .Header a {
     font-size: 20px;
     text-decoration: none;
     display: flex;
     align-items: center;
-
+    transition: 250ms;
 }
 
 .LiText{
@@ -30,8 +31,9 @@
 }
 .Header a:hover {
     color: red;
+    transition: 250ms;
 }
 .LiText:hover, [class = "active"] {
-    color: snow;
+    color: #fff;
     transition: color 100ms ease-in;
 }
