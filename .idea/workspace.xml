@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="198b9c5c-a3cf-4171-841d-79fc2b8d5c1e" name="Changes" comment="almost everything is done, (add Rating.tsx)">
-      <change beforePath="$PROJECT_DIR$/src/components/Search/Searches.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/Searches.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MovieComponent/Movies.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MovieComponent/Movies.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MoviesOfTheGenreComponent/MoviesOfTheGenre.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoviesOfTheGenreComponent/MoviesOfTheGenre.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pagination/MoviePagination.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pagination/MoviePagination.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/slices/movieSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/slices/movieSlice.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +85,9 @@
       <workItem from="1711286798170" duration="12223000" />
       <workItem from="1711383843654" duration="8474000" />
       <workItem from="1711407540734" duration="559000" />
-      <workItem from="1711408131960" duration="2440000" />
+      <workItem from="1711408131960" duration="2728000" />
+      <workItem from="1711529684845" duration="689000" />
+      <workItem from="1711530853856" duration="1933000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1710684624186</created>
@@ -181,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711410256401</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="almost everything is done, (add Rating.tsx)">
+      <created>1711410885736</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1711410885736</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

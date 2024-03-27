@@ -9,7 +9,6 @@ interface IProps extends PropsWithChildren {
 
 const MovieDetails: FC<IProps> = ({movieDetails}) => {
     const {original_title, backdrop_path, overview, genres, release_date, runtime, imdb_id} = movieDetails
-    console.log(movieDetails)
     return (
         <div>
             <ul className={css.BreadCrumbs}>

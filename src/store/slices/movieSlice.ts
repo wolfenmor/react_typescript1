@@ -20,7 +20,9 @@ const initialState: IState = {
     page: 1
 
 }
-const getAll = createAsyncThunk<IPagination<IMovie>, any>(
+const getAll = createAsyncThunk<IPagination<IMovie>, {
+    page: number
+}>(
     "movieSlice/getAll",
     async ({page}, {rejectWithValue}) => {
         try {
@@ -48,7 +50,7 @@ const getAllById = createAsyncThunk<IMovie, {
 )
 const getByGenreId = createAsyncThunk<IMovie, {
     id: string,
-    page: any
+    page: number
 }>(
     "movieSlice/getByGenreId",
     async ({id, page}, {rejectWithValue}) => {

@@ -16,15 +16,13 @@ const MoviesOfTheGenre: FC<IProps> = () => {
     const dispatch = useAppDispatch()
 
     const [query,] = useSearchParams({page: "1"})
-    const page = query.get("page")
+    const page = query.get("page") ? parseInt(query.get("page")!) : 1
 
     const {movieByGenreId} = useAppSelector(state => state.movies)
     useEffect(() => {
         dispatch(movieActions.getByGenreId({id, page}))
     }, [page])
-    console.log(movieByGenreId)
-    const {total_pages} = useAppSelector(state => state.search)
-    console.log(total_pages)
+
     return (
         <div className={css.Block}>
             <div className={css.GenreBox}>

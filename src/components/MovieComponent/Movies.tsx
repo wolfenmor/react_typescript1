@@ -7,12 +7,10 @@ import {useSearchParams} from "react-router-dom";
 import {Movie} from "./Movie";
 
 const Movies = () => {
-    const {movies, total_pages} = useAppSelector(state => state.movies)
+    const {movies} = useAppSelector(state => state.movies)
     const dispatch = useAppDispatch()
     const [query,] = useSearchParams({page: "1"})
-    const page = query.get("page")
-
-    console.log(total_pages)
+    const page = query.get("page") ? parseInt(query.get("page")!) : 1
     useEffect(() => {
         dispatch(movieActions.getAll({page}))
     }, [page, dispatch])

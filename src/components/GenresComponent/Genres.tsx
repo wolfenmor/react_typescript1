@@ -11,7 +11,6 @@ const Genres = () => {
     useEffect(()=> {
     dispatch(genreActions.getAll())
     }, [])
-    console.log(genres)
     return (
         <div className={css.Genres}>
             {genres && genres.map(genre => <Genre key={genre.id} genre={genre}/>)}
